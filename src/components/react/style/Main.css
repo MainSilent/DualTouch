@@ -7,20 +7,6 @@
 body, html, #app, .Main {
   height: 100%;
 }
-.bg-image {
-  position: absolute;
-  background-image: url("../images/background/back.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(15px);
-  height: 100%;
-  width: 100%;
-}
 .Main {
-  background-image: url("../images/background/back.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
 }

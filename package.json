@@ -7,8 +7,8 @@
   "homepage": "./",
   "dependencies": {
     "diff-arrays-of-objects": "^1.1.7",
+    "electron-acrylic-window": "^0.3.3",
     "electron-edge-js": "^12.14.2",
-    "fs": "0.0.1-security",
     "fs-extra": "^9.0.1",
     "jquery": "^3.5.1",
     "node-gyp": "^7.1.0",
@@ -51,9 +51,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "cross-env": "^7.0.2",
     "electron": "^9.1.1",
     "electron-builder": "^22.8.0",
-    "cross-env": "^7.0.2",
+    "electron-rebuild": "^2.0.1",
     "laravel-mix": "^5.0.4",
     "vue-template-compiler": "^2.6.11"
   },
