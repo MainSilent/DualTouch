@@ -1,0 +1,138 @@
+.loader-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+.loader-container .round-loader,
+.loader-container .round-loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.loader-container .round-loader {
+    margin: auto;
+    font-size: 10px;
+    text-indent: -9999em;
+    border-top: 0.3em solid rgba(255, 255, 255, 0.2);
+    border-right: 0.3em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.3em solid rgba(255, 255, 255, 0.2);
+    border-left: 0.3em solid #ffffff;
+    animation: round-loader-spin 1.3s infinite linear;
+}
+@keyframes round-loader-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader-container .bar-loader {
+    width: 56em;
+    height: 0.5em;
+    margin: auto;
+    font-size: 10px;
+    background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0.2) 0);
+    transform: rotate(0);
+    display: none;
+    border-radius: 35%;
+}
+.loader-container .bar-loader-fade {
+    background: linear-gradient(to right, #fff 0, rgba(255, 255, 255, 0.2) 0);
+    animation-name: bar-loader-fade;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+.loader-container .bar-loader .progress {
+    text-align: center;
+    margin-top: -6.5%;
+    font-size: 20px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.loader-container .bar-loader .details { 
+    text-align: center;
+    margin-top: 5%;
+    color: #fff;
+    line-height: 1.4em;
+    font-size: 15px;
+}
+@keyframes bar-loader-fade {
+    from {background-color: rgba(255, 255, 255, 0);}
+    to {background-color: rgba(255, 255, 255, 1);}
+}
+/* Error Section ---------------------------------- */
+.loader-container .error-container {
+    display: none;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    border-radius: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+.loader-container .error-container .error-title {
+    text-align: center;
+    padding: 5px;
+    margin-top: 22px;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.loader-container .error-title .error-sad {
+    font-size: 32px;
+}
+.loader-container .error-container .error-hr {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 560px;
+}
+.loader-container .error-container .error-code, 
+.loader-container .error-container .error-detail {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    padding: 5px;
+    text-align: center;
+}
+.loader-container .error-container .error-code {
+    margin-top: -20px;
+}
+.loader-container .error-container .error-detail-text {
+    margin: 0 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/* Error Section(buttons) ---------------------------------- */
+.loader-container .error-container .button-container {
+    width: 100%;
+    margin: 18px 0 10px;
+    padding-right: 8px;
+    text-align: right;
+}
+.loader-container .error-container .button {
+    font-size: 20px;
+    margin: 2px 6px;
+    padding: 7px 14px;
+    color: white;
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+.loader-container .error-container .button:focus { outline: 0; }
+.loader-container .error-container .more-p {
+    padding: 7px 14px;
+    margin-top: 10px;
+    float: left;
+}
+.loader-container .error-container .more-p a {
+    font-size: 16px;
+    margin: 2px 4px;
+    padding: 5px 10px;
+}
