@@ -1,0 +1,10 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80px;
+    justify-content: center;
+
+    margin:0 auto;
+    width: 98%;
+    border: solid 2px rgb(0, 0, 0, 0.4);
+}

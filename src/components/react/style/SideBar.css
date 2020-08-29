@@ -6,20 +6,20 @@
 
     margin: auto 0;
     height: 98%;
-    border-right: 2px solid rgb(0, 0, 0, 0.4);
+    box-shadow: 2px 0 2px -1.8px rgb(0, 0, 0, 0.4);
 }
 .side-bar .icon {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 }
 .side-bar .icon:first-child {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     width: 85%;
-    border-bottom: 2px solid rgb(0, 0, 0, 0.4);
+    border-bottom: 1.5px solid rgb(0, 0, 0, 0.4);
 }
 .side-bar .icon:not(:first-child) {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .side-bar .icon:last-child {
     margin-top: auto;

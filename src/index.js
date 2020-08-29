@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Loader from "./components/react/PreLoader";
 import SideBar from "./components/react/SideBar";
+import TopBar from "./components/react/TopBar";
 
 class App extends React.Component {
   constructor() {
@@ -21,8 +22,11 @@ class App extends React.Component {
       <div className="Main">
         {
         this.state.isLoading ? <Loader stop={this.stopLoading}/> :
-
-        <SideBar />
+        
+        <div style={{display: 'flex', width: "100%"}}>
+          <SideBar />
+          <TopBar />
+        </div>
         }
       </div>
     );

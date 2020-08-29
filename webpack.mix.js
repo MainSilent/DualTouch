@@ -5,7 +5,8 @@ mix.react('src/index.js', 'public/assets/js/app.js')
     [
         'src/components/react/style/Main.css',
         'src/components/react/style/Loader.css',
-        'src/components/react/style/SideBar.css'
+        'src/components/react/style/SideBar.css',
+        'src/components/react/style/TopBar.css'
     ],
     'public/assets/css/app.css'
 );
