@@ -1,0 +1,29 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80px;
+    align-items: center;
+
+    margin: auto 0;
+    height: 98%;
+    border-right: 2px solid rgb(0, 0, 0, 0.4);
+}
+.side-bar .icon {
+    color: white;
+    font-size: 50px;
+}
+.side-bar .icon:first-child {
+    text-align: center;
+    padding-bottom: 15px;
+    width: 85%;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.4);
+}
+.side-bar .icon:not(:first-child) {
+    margin-top: 15px;
+}
+.side-bar .icon:last-child {
+    margin-top: auto;
+}
+.side-bar .active {
+    color: rgb(0, 255, 170, 0.7);
+}

@@ -8,5 +8,6 @@ body, html, #app, .Main {
   height: 100%;
 }
 .Main {
+  display: flex;
   overflow: hidden;
 }

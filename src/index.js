@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Loader from "./components/react/PreLoader";
+import SideBar from "./components/react/SideBar";
 
 class App extends React.Component {
   constructor() {
@@ -21,13 +22,7 @@ class App extends React.Component {
         {
         this.state.isLoading ? <Loader stop={this.stopLoading}/> :
 
-        <div style={{
-          color: 'white',
-          position: 'relative',
-          fontSize: 50,
-          textAlign: 'center' ,
-          marginTop: '400px'
-        }}>Done!</div>
+        <SideBar />
         }
       </div>
     );
