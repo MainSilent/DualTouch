@@ -4,11 +4,11 @@ class SideBar extends React.Component {
     render() {
         return (
             <div className="side-bar">
-                <i class="fad fa-home-alt icon"></i> 
-                <i class="fad fa-th-large icon"></i>
-                <i class="fad fa-keyboard icon"></i>
-                <i class="fas fa-folder icon active"></i>
-                <i class="fad fa-power-off icon"></i>
+                <i className="fad fa-home-alt icon"></i> 
+                <i className="fad fa-th-large icon"></i>
+                <i className="fad fa-keyboard icon"></i>
+                <i className="fas fa-folder icon active"></i>
+                <i className="fad fa-power-off icon"></i>
             </div>
         )
     }

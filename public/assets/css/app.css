@@ -11,6 +11,10 @@ body, html, #app, .Main {
   display: flex;
   overflow: hidden;
 }
+.main-content {
+  display: flex;
+  width: 100%;
+}
 .loader-container {
     display: flex;
     height: 100%;
@@ -152,11 +156,10 @@ body, html, #app, .Main {
 .side-bar {
     display: flex;
     flex-direction: column;
-    flex-basis: 80px;
     align-items: center;
-
-    margin: auto 0;
-    height: 98%;
+    margin: 0;
+    width: 80px;
+    height: 100%;
     box-shadow: 2px 0 2px -1.8px rgb(0, 0, 0, 0.4);
 }
 .side-bar .icon {
@@ -166,14 +169,16 @@ body, html, #app, .Main {
 .side-bar .icon:first-child {
     text-align: center;
     padding-bottom: 20px;
+    margin-top: 10px;
     width: 85%;
-    border-bottom: 1.5px solid rgb(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px -1.8px rgb(0, 0, 0, 0.4);
 }
 .side-bar .icon:not(:first-child) {
     margin-top: 20px;
 }
 .side-bar .icon:last-child {
     margin-top: auto;
+    margin-bottom: 10px;
 }
 .side-bar .active {
     color: rgb(0, 255, 170, 0.7);
@@ -181,10 +186,10 @@ body, html, #app, .Main {
 .top-bar {
     display: flex;
     flex-direction: row;
-    flex-basis: 80px;
+    height: 63.5px;
     justify-content: center;
-
-    margin:0 auto;
-    width: 98%;
-    border: solid 2px rgb(0, 0, 0, 0.4);
+    margin: 6.5px;
+    margin-right: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px -1.8px rgb(0, 0, 0, 0.4);
 }

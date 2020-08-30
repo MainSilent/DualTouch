@@ -23,7 +23,7 @@ class App extends React.Component {
         {
         this.state.isLoading ? <Loader stop={this.stopLoading}/> :
         
-        <div style={{display: 'flex', width: "100%"}}>
+        <div className="main-content">
           <SideBar />
           <TopBar />
         </div>
