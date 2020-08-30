@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Loader from "./components/react/PreLoader";
 import SideBar from "./components/react/SideBar";
 import TopBar from "./components/react/TopBar";
+import Content from "./components/react/Content";
 
 class App extends React.Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends React.Component {
         <div className="main-content">
           <SideBar />
           <TopBar />
+          <Content />
         </div>
         }
       </div>

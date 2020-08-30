@@ -21,6 +21,7 @@ function createWindow () {
     thickFrame: false,
     transparent: true,
     vibrancy: 'dark',
+    // vbrancy make it slow!
     webPreferences: {
       nodeIntegration: true,
     } ,show:false
