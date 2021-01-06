@@ -1,0 +1,114 @@
+{
+    "keys": [
+        [
+            {"name": "esc", "space": 1, "type": "control"},
+
+            {"name": "f1", "space": 1, "type": "function"},
+            {"name": "f2", "space": 1, "type": "function"},
+            {"name": "f3", "space": 1, "type": "function"},
+            {"name": "f4", "space": 1, "type": "function"},
+            {"name": "f5", "space": 1, "type": "function"},
+            {"name": "f6", "space": 1, "type": "function"},
+            {"name": "f7", "space": 1, "type": "function"},
+            {"name": "f8", "space": 1, "type": "function"},
+            {"name": "f9", "space": 1, "type": "function"},
+            {"name": "f10", "space": 1, "type": "function"},
+            {"name": "f11", "space": 1, "type": "function"},
+            {"name": "f12", "space": 1, "type": "function"},
+
+            {"name": "prt sc", "space": 1, "type": "control"},
+            {"name": "delete", "space": 1, "type": "control"}
+        ],
+
+        [
+            {"name": "`", "cname": "~", "space": 1, "type": "char"},
+
+            {"name": "1", "cname": "!", "space": 1, "type": "char"},
+            {"name": "2", "cname": "@", "space": 1, "type": "char"},
+            {"name": "3", "cname": "#", "space": 1, "type": "char"},
+            {"name": "4", "cname": "$", "space": 1, "type": "char"},
+            {"name": "5", "cname": "%", "space": 1, "type": "char"},
+            {"name": "6", "cname": "^", "space": 1, "type": "char"},
+            {"name": "7", "cname": "&", "space": 1, "type": "char"},
+            {"name": "8", "cname": "*", "space": 1, "type": "char"},
+            {"name": "9", "cname": "(", "space": 1, "type": "char"},
+            {"name": "0", "cname": ")", "space": 1, "type": "char"},
+            {"name": "-", "cname": "_", "space": 1, "type": "char"},
+            {"name": "=", "cname": "+", "space": 1, "type": "char"},
+
+            {"name": "backspace", "space": 1, "type": "echar"}
+        ],
+
+        [
+            {"name": "tab", "space": 1.75, "type": "echar"},
+
+            {"name": "q", "cname": "Q", "space": 1, "type": "alphabet"},
+            {"name": "w", "cname": "W", "space": 1, "type": "alphabet"},
+            {"name": "e", "cname": "E", "space": 1, "type": "alphabet"},
+            {"name": "r", "cname": "R", "space": 1, "type": "alphabet"},
+            {"name": "t", "cname": "T", "space": 1, "type": "alphabet"},
+            {"name": "y", "cname": "Y", "space": 1, "type": "alphabet"},
+            {"name": "u", "cname": "U", "space": 1, "type": "alphabet"},
+            {"name": "i", "cname": "I", "space": 1, "type": "alphabet"},
+            {"name": "o", "cname": "O", "space": 1, "type": "alphabet"},
+            {"name": "p", "cname": "P", "space": 1, "type": "alphabet"},
+
+            {"name": "[", "cname": "{", "space": 1, "type": "char"},
+            {"name": "]", "cname": "}", "space": 1, "type": "char"},
+            {"name": "\\", "cname": "|", "space": 1.25, "type": "char"}
+        ],
+        
+        [
+            {"name": "capslock", "space": 1.5, "type": "control"},
+
+            {"name": "a", "cname": "A", "space": 1, "type": "alphabet"},
+            {"name": "s", "cname": "S", "space": 1, "type": "alphabet"},
+            {"name": "d", "cname": "D", "space": 1, "type": "alphabet"},
+            {"name": "f", "cname": "F", "space": 1, "type": "alphabet"},
+            {"name": "g", "cname": "G", "space": 1, "type": "alphabet"},
+            {"name": "h", "cname": "H", "space": 1, "type": "alphabet"},
+            {"name": "j", "cname": "J", "space": 1, "type": "alphabet"},
+            {"name": "k", "cname": "K", "space": 1, "type": "alphabet"},
+            {"name": "l", "cname": "L", "space": 1, "type": "alphabet"},
+            {"name": ";", "cname": ":", "space": 1, "type": "char"},
+            {"name": "'", "cname": "\"", "space": 1, "type": "char"},
+
+            {"name": "enter", "space": 2.25, "type": "control"}
+        ],
+
+        [
+            {"name": "shift", "space": 2.5, "type": "control"},
+
+            {"name": "z", "cname": "Z", "space": 1, "type": "alphabet"},
+            {"name": "x", "cname": "X", "space": 1, "type": "alphabet"},
+            {"name": "c", "cname": "C", "space": 1, "type": "alphabet"},
+            {"name": "v", "cname": "V", "space": 1, "type": "alphabet"},
+            {"name": "b", "cname": "B", "space": 1, "type": "alphabet"},
+            {"name": "n", "cname": "N", "space": 1, "type": "alphabet"},
+            {"name": "m", "cname": "M", "space": 1, "type": "alphabet"},
+            {"name": ",", "cname": "<", "space": 1, "type": "char"},
+            {"name": ".", "cname": ">", "space": 1, "type": "char"},
+            {"name": "/", "cname": "?", "space": 1, "type": "char"},
+
+            {"name": "shift", "space": 1, "type": "control"},
+
+            {"name": "up", "space": 1, "type": "nav"}
+        ],
+
+        [
+            {"name": "ctrl", "space": 1, "type": "control"},
+            {"name": "winkey", "space": 1, "type": "control"},
+            {"name": "alt", "space": 1, "type": "control"},
+            
+            {"name": "spacebar",  "space": 6, "type": "char"},
+
+            {"name": "alt", "space": 1, "type": "control"},
+            {"name": "menu", "space": 1, "type": "control"},
+            {"name": "ctrl", "space": 1.25, "type": "control"},
+
+            {"name": "left", "space": 1, "type": "nav"},
+            {"name": "down", "space": 1, "type": "nav"},
+            {"name": "right", "space": 1.1, "type": "nav"}
+        ]
+    ]
+}

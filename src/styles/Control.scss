@@ -1,0 +1,98 @@
+.control-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: $component-height;
+    padding: 10px;
+    
+    .keyboard-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60%;
+        width: 100%;
+
+        .keys {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .key {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                border-radius: $radius;
+                background-color: rgba(0, 0, 0, 0.5);
+                height: 100%;
+                
+                .name {
+                    color: rgba(255, 255, 255, 0.4);
+                }
+
+                .cname {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    color: rgba(255, 255, 255, 0.4);
+                }
+
+                .active-letter {
+                    color: white;
+                    background-color: transparent;
+                }
+            }
+
+            .active {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            .active .active-letter {
+                color: black !important;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .touchpad-container {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .touchpad {
+            display: flex;
+            align-items: center;
+            height: 95%;
+            width: 45%;
+
+            .left-side {
+                width: 50%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-top-left-radius: $radius;
+                border-bottom-left-radius: $radius;
+            }
+
+            .middle-line {
+                width: 0.1%;
+                height: 80%;
+                background-color: white;
+            }
+
+            .right-side {
+                width: 50%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-top-right-radius: $radius;
+                border-bottom-right-radius: $radius;
+            }
+
+            .active {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}

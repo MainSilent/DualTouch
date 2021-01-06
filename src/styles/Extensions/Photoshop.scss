@@ -1,0 +1,67 @@
+.Photoshop-container {
+    position: relative;
+    height: $component-height;
+    padding: $component-padding;
+    width: 100%;
+
+    .controls {
+        display: flex;
+        width: 100%;
+        height: 96%;
+        margin-top: 1%;
+        overflow: hidden;
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .slider {
+                margin-top: 25px;
+                height: 200px;
+            }
+
+            .rc-slider-handle {
+                width: 28px;
+                height: 16px;
+                margin-top: -7px;
+                margin-left: -12px;
+                border-radius: 5px;
+                color: rgba(255, 255, 255, .7);
+            }
+
+            .rc-slider-step {
+                background-color: rgba(0, 0, 0, .3);
+            }
+
+            i {
+                font-size: 18px;
+                padding: 14px 18px;
+                border-radius: $radius;
+                color: white;
+                background-color: rgba(0, 0, 0, .3);
+            }
+
+            i:not(:first-child) {
+                margin-top: 15px;
+            }
+
+            i.active {
+                color: black;
+                background-color: rgba(255, 255, 255, .7);
+            }
+        }
+
+        .document {
+            width: 100%;
+            margin-left: 0.5%;
+            border-radius: $radius;
+            border: 1px solid rgb(0, 0, 0, .5);
+
+            #screen {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+.fileExplorer-container {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 8% auto;
+    grid-gap: 10px;
+    height: $component-height;
+    padding: $component-padding;
+}
+
+/* Navigation ---------------------------------------- */
+
+.fileExplorer-container .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fileExplorer-container .navigation span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: $radius;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fileExplorer-container .navigation span:nth-child(1) {
+    margin-right: 2.5px;
+}
+
+.fileExplorer-container .navigation span:nth-child(2) {
+    margin-left: 2.5px;
+}
+
+/* Breadcrumbs ---------------------------------------- */
+
+.fileExplorer-container .breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.fileExplorer-container .breadcrumbs span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 5px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fileExplorer-container .breadcrumbs span:nth-child(1) {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    padding-left: 10px;
+}
+
+.fileExplorer-container .breadcrumbs span:last-child {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    padding: 0 12px;
+}
+
+/* Sidebar -------------------------------------- */
+
+.fileExplorer-container .sidebar {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: $radius;
+    overflow: auto;
+}
+
+.fileExplorer-container .sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.fileExplorer-container .sidebar .quick_access div {
+    padding: 12px 15px;
+    margin: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fileExplorer-container .sidebar .bookmarks div {
+    padding: 9px 12px;
+    margin: 4px 8px;
+}
+
+.fileExplorer-container .sidebar .bookmarks div:first-child {
+    padding: 9px 12px;
+    margin-top: 8px;
+}
+
+.fileExplorer-container .sidebar .quick_access .active {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: $radius;
+}
+
+.fileExplorer-container .sidebar .quick_access div i {
+    margin-right: 10px;
+}
+
+.fileExplorer-container .sidebar .line {
+    height: 1px;
+    width: 95%;
+    margin: auto;
+    box-shadow: 0px 1px 1px white;
+}
+
+/* Files ---------------------------------------- */
+
+.fileExplorer-container .files {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-auto-rows: min-content;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.fileExplorer-container .files::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    width: 7px;
+}
+
+.fileExplorer-container .files::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+.fileExplorer-container .files .file {
+    display: flex;
+    height: 90%;
+    margin: 4px;
+    padding: 10px 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: $radius;
+}
+
+.fileExplorer-container .files .file .icon {
+    width: 60px;
+}
+
+.fileExplorer-container .files .file .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 5px;
+}
+
+.fileExplorer-container .files .file .detail .name {
+    font-size: 17px;
+    font-weight: 600;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fileExplorer-container .files .file .detail .size {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fileExplorer-container .files .file .detail #progressbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.fileExplorer-container .files .file .detail #progressbar > div {
+    background-color: white;
+    height: 0.25em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Media ---------------------------------------- */
+
+@media only screen and (max-width: 1600px) {
+    .fileExplorer-container {
+        grid-gap: 8px;
+        padding: 20px;
+    }
+    .fileExplorer-container .files {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .fileExplorer-container .files {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .fileExplorer-container {
+        grid-gap: 5px;
+        padding: 10px;
+    }
+    .fileExplorer-container .navigation span {
+        height: 35px;
+        width: 75px;
+    }
+    .fileExplorer-container .breadcrumbs span {
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .fileExplorer-container .files {
+        grid-template-columns: 50% 50%;
+    }
+}

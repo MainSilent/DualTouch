@@ -1,0 +1,58 @@
+$top-bar-height: 70px;
+$component-height: calc(100% - #{$top-bar-height});
+$component-padding: 10px 20px 45px;
+$radius: .25vw;
+$control-color: #000;
+$control-background-color: #fff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+a { text-decoration: none; }
+body, html, #app, .index {
+  height: 100%;
+}
+.index {
+  display: flex;
+  overflow: hidden;
+
+  .root {
+    width: calc(100% - 80px);
+  }
+}
+
+.index:before {
+  content: "";
+  position: fixed;
+  top: -5%;
+  left: -5%;
+  right: -5%;
+  z-index: -9999;
+
+  display: block;
+  background-size:cover;
+  background-position: center;
+  width: 110%;
+  height: 110%;
+
+  filter: blur(35px);
+}
+
+@import 'Loader.scss';
+@import 'SideBar.scss';
+@import 'TopBar.scss';
+// Components
+@import 'Programs.scss';
+@import 'Control.scss';
+@import 'FileExplorer.scss';
+@import 'Power.scss';
+// Extensions
+@import './Extensions/Window.scss';
+@import './Extensions/Movies&TV.scss';
+@import './Extensions/Photoshop.scss';

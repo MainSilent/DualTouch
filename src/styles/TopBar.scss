@@ -1,0 +1,143 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    height: $top-bar-height;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 6.5px;
+    width: calc(100% - 10px);
+    box-shadow: 0 2px 2px -1.8px rgb(0, 0, 0, 0.4);
+    user-select: none;
+
+    .programs {
+        display: flex;
+        flex-direction: row;
+        height: $top-bar-height;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 6.5px;
+        margin-right: 14px;
+        overflow-x: scroll;
+
+        .program {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(0, 0, 0, 0.2);
+            padding: 10px;
+            margin: -2px 8px 0 8px;
+            border-radius: $radius;
+    
+            .icon {
+                width: 38px;
+            }
+    
+            .title {
+                width: max-content;
+                margin-left: 15px;
+                display: none;
+            }
+        }
+    
+        .active {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    
+        .alert {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+    
+        .alertBlink {
+            animation: alertBlink 0.5s 10;
+            animation-direction: alternate;
+        }
+    
+        @keyframes alertBlink {
+            from {
+                background-color: transparent;
+            }
+    
+            to {
+                background-color: rgba(255, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .tools {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        //overflow-x: scroll;
+
+        // Task View
+        .taskview {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: $radius;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin: 0 12px;
+            padding: 20px 40px;
+        }
+
+        .taskview-sub {
+            margin: 0 6px;
+            padding: 20px 25px;
+        }
+
+        // media controller
+        .media-controller {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: $radius;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px 50px;
+            text-align: center;
+            font-size: 6px;
+
+            .bottom {
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                right: 0;
+            }
+
+            .top {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                right: 0;
+            }
+
+            .left {
+                position: absolute;
+                top: 50%;
+                left: 4px;
+                transform: translateY(-50%);
+            }
+
+            .right {
+                position: absolute;
+                top: 50%;
+                right: 4px;
+                transform: translateY(-50%);
+            }
+
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 10px;
+            }
+        }
+    }
+
+    .programs::-webkit-scrollbar, .tools::-webkit-scrollbar {
+        display: none;
+    }
+}
